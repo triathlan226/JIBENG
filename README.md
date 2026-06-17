@@ -8,3 +8,8 @@
 - 獎品：精緻獎牌收納盒
 
 部署到 GitHub Pages 後，手機可用頁面網址直接執行抽籤。
+
+## 版本
+
+- 原號碼抽籤頁：`https://triathlan226.github.io/JIBENG/`
+- 號碼姓名抽籤頁：`https://triathlan226.github.io/JIBENG/name-draw/`

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#123c47">
+    <meta name="description" content="知本溫泉公益馬拉松愛戀鐵專屬團報好禮抽獎，抽出號碼與姓名。">
+    <title>知本馬團報姓名抽獎</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="app-title">
+        <div class="hero-copy">
+          <p class="eyebrow">知本溫泉公益馬拉松十週年</p>
+          <h1 id="app-title">愛戀鐵專屬團報好禮抽獎</h1>
+          <p class="lead">
+            本頁依團報名單抽出「號碼與姓名」，共 113 位參與者，抽出 5 名精緻獎牌收納盒得主。
+          </p>
+        </div>
+        <figure class="prize-photo">
+          <img src="../assets/medal-box.jpg" alt="精緻獎牌收納盒">
+          <figcaption>獎項：精緻獎牌收納盒，共 5 名</figcaption>
+        </figure>
+      </section>
+
+      <section class="draw-panel" aria-labelledby="draw-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">名單 1-113</p>
+            <h2 id="draw-title">抽出幸運夥伴</h2>
+          </div>
+          <div class="progress" aria-live="polite">
+            <span id="drawCount">0</span><span>/5</span>
+          </div>
+        </div>
+
+        <div class="name-stage" aria-live="polite" aria-atomic="true">
+          <span class="stage-label">目前抽出</span>
+          <strong id="currentNumber">--</strong>
+          <b id="currentName">等待抽籤</b>
+        </div>
+
+        <div class="controls">
+          <button id="drawOne" class="primary-button" type="button">抽出下一位</button>
+          <button id="drawAll" class="secondary-button" type="button">一次抽滿 5 名</button>
+          <button id="resetDraw" class="ghost-button" type="button">重新抽籤</button>
+        </div>
+
+        <div class="winners-block">
+          <div class="section-heading">
+            <h3>中獎名單</h3>
+            <span id="remainingCount">剩餘 113 位</span>
+          </div>
+          <ol id="winnerList" class="winner-list"></ol>
+          <p id="emptyState" class="empty-state">尚未抽出名單，按下抽籤開始。</p>
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
